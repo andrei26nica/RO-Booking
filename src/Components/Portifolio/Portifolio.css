@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&family=Poppins:wght@100;300;400;500;600&display=swap");
+root {
+  --primaryColor:hsl(14,90%,53%);
+  --primaryColorLight:hsl(14,96%,91%);
+  --bgColor:hsl(0,0%,100%);
+  --formColor:hsl(20,42%,87%);
+  --whiteCollor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --greyText:hsl(0,0%,51%);
+  --inputColor:hsl(330,12%,97%);
+  --cardColor:hsl(300,3%,94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.portifolio .secContainer {
+  gap: 2rem;
+}
+.portifolio .secContainer .leftContent .grid .singlePortifolio {
+  gap: 1rem;
+  align-items: flex-start;
+}
+.portifolio .secContainer .leftContent .grid .singlePortifolio .iconDiv img {
+  height: 50px;
+  width: 50px;
+}
+.portifolio .secContainer .leftContent .grid .singlePortifolio .infor h4 {
+  padding-bottom: 0.5rem;
+}
+
+@media screen {
+  .portifolio .secContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portifolio .secContainer .leftContent .secHeading h3 {
+    font-size: var(--h2FontSize);
+  }
+  .portifolio .secContainer .leftContent .secHeading p {
+    font-size: var(--normalFontSize);
+    padding: 0.5rem 0;
+  }
+  .portifolio .secContainer .leftContent .grid .singlePortifolio {
+    gap: 1.5rem;
+  }
+  .portifolio .secContainer .leftContent .grid .singlePortifolio .iconDiv img {
+    height: 60px;
+    width: 60px;
+  }
+  .portifolio .secContainer .leftContent .grid .singlePortifolio .infor h4 {
+    padding-bottom: 0.5rem;
+    font-size: var(--h3FontSize);
+  }
+  .portifolio .secContainer .leftContent .grid .singlePortifolio .infor p {
+    font-size: var(--normalFontSize);
+  }
+}
+@media screen {
+  .portifolio .secContainer .leftContent .secHeading h3 {
+    font-size: 2rem;
+  }
+  .portifolio .secContainer .leftContent .secHeading p {
+    font-size: var(--h3FontSize);
+  }
+  .portifolio .secContainer .leftContent .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portifolio .secContainer .leftContent .grid .singlePortifolio {
+    gap: 1.5rem;
+  }
+  .portifolio .secContainer .rightContent {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portifolio .secContainer .rightContent img {
+    margin: auto;
+    max-width: 80%;
+  }
+}
+@media screen {
+  .portifolio .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portifolio .secContainer .leftContent .secHeading h3 {
+    font-size: var(--h2FontSize);
+  }
+  .portifolio .secContainer .leftContent .secHeading p {
+    font-size: var(--h3FontSize);
+  }
+  .portifolio .secContainer .leftContent .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portifolio .secContainer .leftContent .singlePortifolio {
+    gap: 1.5rem;
+  }
+  .portifolio .secContainer .rightContent img {
+    max-width: 100%;
+  }
+}
+@media screen {
+  .portifolio .secContainer {
+    gap: 3rem;
+  }
+  .portifolio .leftContent .secHeading h3 {
+    font-size: 2rem;
+  }
+  .portifolio .leftContent .secHeading p {
+    font-size: var(--h3FontSize);
+  }
+  .portifolio .leftContent .grid {
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+  .portifolio .leftContent .grid .singlePortifolio {
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=Portifolio.css.map */
