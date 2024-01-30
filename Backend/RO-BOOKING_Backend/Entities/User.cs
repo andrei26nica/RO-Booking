@@ -1,7 +1,10 @@
-﻿namespace RO_BOOKING_Backend.Entities
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace RO_BOOKING_Backend.Entities
 {
-    public class User
+    public class User : IdentityUser<int>
     {
+        public User() : base() { }
         public int IdUser { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
