@@ -3,7 +3,8 @@ using RO_BOOKING_Backend.Data;
 using RO_BOOKING_Backend.Entities;
 using RO_BOOKING_Backend.Repositories.GenericRepositories;
 
-namespace RO_BOOKING_Backend.Repositories.SessionTokenRepository
+
+namespace RO_BOOKING_Backend.Repositories.SessionTokenRepositories
 {
     public class SessionTokenRepository : GenericRepository<SessionToken>, ISessionTokenRepository
     {

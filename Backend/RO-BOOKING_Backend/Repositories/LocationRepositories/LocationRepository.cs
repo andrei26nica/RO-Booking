@@ -13,24 +13,15 @@ namespace RO_BOOKING_Backend.Repositories.LocationRepositories
         {
             return await _context.Locations.ToListAsync();
         }
-
-        public async Task<Location> GetLocationById(int locationId)
+        public async Task<Location> GetLocationById(int Id)
         {
-            return await _context.Locations
-                .Where(l => l.id == locationId)
-                .FirstOrDefaultAsync();
+            return await _context.Locations.Where(a => a.id.Equals(Id)).FirstOrDefaultAsync();
         }
 
-        public async Task<Location> GetLocationByStreetAsync(string street)
+        public async Task<Location> GetLocationsByCity(string City)
         {
-            return await _context.Locations
-                .FirstOrDefaultAsync(location => location.street == street);
+            return await _context.Locations.Where(a => a.City.Equals(City)).FirstOrDefaultAsync();
         }
 
-        public async Task<Location> GetLocationByZipCodeAsync(string zipCode)
-        {
-            return await _context.Locations
-                .FirstOrDefaultAsync(location => location.zipCode == zipCode);
-        }
     }
 }

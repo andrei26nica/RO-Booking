@@ -6,6 +6,7 @@
         public string street { get; set; }
         public string City { get; set; }
         public string zipCode { get; set; }
+        public int idDestination { get; set; }
 
         public LocationDTO(Location location)
         {
@@ -13,6 +14,7 @@
             this.street = location.street;
             this.City = location.City;
             this.zipCode = location.zipCode;
+            this.idDestination = location.idDestination;
         }
     }
 }

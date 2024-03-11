@@ -19,4 +19,4 @@ namespace RO_BOOKING_Backend.Entities
         public User User { get; set; }
     }
 }
-}
+

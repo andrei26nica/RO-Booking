@@ -7,8 +7,7 @@ namespace RO_BOOKING_Backend.Repositories.LocationRepositories
     {
         Task<List<Location>> GetAllLocations();
         Task<Location> GetLocationById(int Id);
-        Task<Location> GetLocationByStreetAsync(string street);
-        Task<Location> GetLocationByZipCodeAsync(string zipCode);
+        Task<Location> GetLocationsByCity(string City);
     }
    
 }

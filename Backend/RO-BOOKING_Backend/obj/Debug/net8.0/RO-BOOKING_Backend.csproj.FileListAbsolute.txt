@@ -1,0 +1,7 @@
+D:\LICENTA_2024\RO-Booking\RO-Booking\Backend\RO-BOOKING_Backend\obj\Debug\net8.0\RO-BOOKING_Backend.csproj.AssemblyReference.cache
+D:\LICENTA_2024\RO-Booking\RO-Booking\Backend\RO-BOOKING_Backend\obj\Debug\net8.0\RO-BOOKING_Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\LICENTA_2024\RO-Booking\RO-Booking\Backend\RO-BOOKING_Backend\obj\Debug\net8.0\RO-BOOKING_Backend.AssemblyInfoInputs.cache
+D:\LICENTA_2024\RO-Booking\RO-Booking\Backend\RO-BOOKING_Backend\obj\Debug\net8.0\RO-BOOKING_Backend.AssemblyInfo.cs
+D:\LICENTA_2024\RO-Booking\RO-Booking\Backend\RO-BOOKING_Backend\obj\Debug\net8.0\RO-BOOKING_Backend.csproj.CoreCompileInputs.cache
+D:\LICENTA_2024\RO-Booking\RO-Booking\Backend\RO-BOOKING_Backend\obj\Debug\net8.0\RO-BOOKING_Backend.MvcApplicationPartsAssemblyInfo.cache
+D:\LICENTA_2024\RO-Booking\RO-Booking\Backend\RO-BOOKING_Backend\obj\Debug\net8.0\RO-BOOKING_Backend.sourcelink.json
