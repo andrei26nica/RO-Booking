@@ -70,7 +70,8 @@ namespace RO_BOOKING_Backend.Controllers
             Destination newDestination = new Destination();
 
             newDestination.Budget = dto.Budget;
-            newDestination.IdLocation = dto.IdLocation;
+            newDestination.LocationId = dto.LocationId;
+            newDestination.DestinationTypeId = dto.DestinationTypeId;
 
             // Set other properties if needed
 

@@ -66,10 +66,10 @@ namespace RO_BOOKING_Backend.Controllers
         {
             Reservation newReservation = new Reservation
             {
-                IdDestination = dto.IdDestination,
+                DestinationId = dto.DestinationId,
                 StartDate = dto.StartDate,
                 EndDate = dto.EndDate,
-                IdUser = dto.IdUser
+                UserId = dto.UserId
             };
 
             _repository.Create(newReservation);
@@ -84,7 +84,7 @@ namespace RO_BOOKING_Backend.Controllers
         {
             var array_reservation = await _repository.GetAllReservations();
 
-            var reservationIndex = array_reservation.FindIndex((Reservation _reservation) => _reservation.IdUser.Equals(reservation.IdUser));
+            var reservationIndex = array_reservation.FindIndex((Reservation _reservation) => _reservation.UserId.Equals(reservation.UserId));
 
             array_reservation[reservationIndex] = reservation;
 

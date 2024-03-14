@@ -36,22 +36,6 @@ namespace RO_BOOKING_Backend.Controllers
             return Ok(locationToReturn);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetAllLocationsById(int id)
-        {
-            var locations = await _repository.GetAllLocations();
-
-            var locationToReturn = new List<LocationDTO>();
-
-            foreach (var location in locations)
-            {
-                if (location.idDestination == id)
-                    locationToReturn.Add(new LocationDTO(location));
-            }
-
-            return Ok(locationToReturn);
-        }
-
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteLocation(int id)
         {
@@ -78,7 +62,6 @@ namespace RO_BOOKING_Backend.Controllers
             newLocation.City = dto.City;
             newLocation.street = dto.street;
             newLocation.zipCode = dto.zipCode;
-            newLocation.idDestination = dto.idDestination;
 
             _repository.Create(newLocation);
 
@@ -92,7 +75,7 @@ namespace RO_BOOKING_Backend.Controllers
         {
             var array_location = await _repository.GetAllLocations();
 
-            var locationIndex = array_location.FindIndex((Location _location) => _location.id.Equals(location.id));
+            var locationIndex = array_location.FindIndex((Location _location) => _location.Id.Equals(location.Id));
 
             array_location[locationIndex] = location;
 

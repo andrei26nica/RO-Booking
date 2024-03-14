@@ -30,17 +30,17 @@ namespace RO_BOOKING_Backend.Data
             .WithOne(b => b.Locations);
 
             // MadeWith
-            modelBuilder.Entity<Reservation>().HasKey(x => new { x.IdDestination, x.IdUser });
+            modelBuilder.Entity<Reservation>().HasKey(x => new { x.DestinationId, x.UserId });
 
             modelBuilder.Entity<Reservation>()
                  .HasOne(rf => rf.User)
                  .WithMany(r => r.Reservations)
-                 .HasForeignKey(rf => rf.IdUser);
+                 .HasForeignKey(rf => rf.UserId);
 
              modelBuilder.Entity<Reservation>()
                  .HasOne(rf => rf.Destination)
                  .WithMany(f => f.Reservations)
-                 .HasForeignKey(rf => rf.IdDestination);
+                 .HasForeignKey(rf => rf.DestinationId);
 
 
             base.OnModelCreating(modelBuilder);

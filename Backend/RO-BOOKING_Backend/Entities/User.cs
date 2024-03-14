@@ -5,7 +5,7 @@ namespace RO_BOOKING_Backend.Entities
     public class User : IdentityUser<int>
     {
         public User() : base() { }
-        public int IdUser { get; set; }
+        public int UserId { get; set; }
         public string Name { get; set; }
         public string HomeCity { get; set; }
         public string Phone { get; set; }

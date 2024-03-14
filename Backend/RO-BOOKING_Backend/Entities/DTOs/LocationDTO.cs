@@ -2,19 +2,17 @@
 {
     public class LocationDTO
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string street { get; set; }
         public string City { get; set; }
         public string zipCode { get; set; }
-        public int idDestination { get; set; }
 
         public LocationDTO(Location location)
         {
-            this.id = location.id;
+            this.Id = location.Id;
             this.street = location.street;
             this.City = location.City;
             this.zipCode = location.zipCode;
-            this.idDestination = location.idDestination;
         }
     }
 }

@@ -15,17 +15,17 @@ namespace RO_BOOKING_Backend.Repositories.ReservationRepositories
             return await _context.Reservations.ToListAsync();
         }
 
-        public async Task<Reservation> GetReservationById(int IdDestination)
+        public async Task<Reservation> GetReservationById(int DestinationId)
         {
             return await _context.Reservations
-                .Where(a => a.IdDestination.Equals(IdDestination))
+                .Where(a => a.DestinationId.Equals(DestinationId))
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<Reservation> GetReservationsById(int IdUser)
+        public async Task<Reservation> GetReservationsById(int UserId)
         {
             return await _context.Reservations
-                .Where(a => a.IdUser.Equals(IdUser))
+                .Where(a => a.UserId.Equals(UserId))
                 .FirstOrDefaultAsync();
         }
     }

@@ -15,7 +15,7 @@ namespace RO_BOOKING_Backend.Repositories.LocationRepositories
         }
         public async Task<Location> GetLocationById(int Id)
         {
-            return await _context.Locations.Where(a => a.id.Equals(Id)).FirstOrDefaultAsync();
+            return await _context.Locations.Where(a => a.Id.Equals(Id)).FirstOrDefaultAsync();
         }
 
         public async Task<Location> GetLocationsByCity(string City)
